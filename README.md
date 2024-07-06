@@ -68,11 +68,11 @@ The `testng.xml` file is configured to run tests in parallel. You can modify the
 
 Edit the testng.xml file to adjust parallel execution settings:
 ```
-<suite name="Parallel Test Suite" parallel="classes" thread-count="4">
-    <test name="Test1">
+<suite name="Parallel Test Suite" parallel="classes" thread-count="5">
+    <test name="ParallelTestExecutionTutorial">
         <classes>
-            <class name="com.example.tests.TestClass1"/>
-            <class name="com.example.tests.TestClass2"/>
+            <class name="com.example.tests.ParallelClassA"/>
+            <class name="com.example.tests.ParallelClassB"/>
         </classes>
     </test>
 </suite>
