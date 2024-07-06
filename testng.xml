@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="ParallelTestExecutionTutorial" parallel="true" thread-count="5">
+        <classes>
+            <class name="Parallel.ParallelClassA">
+
+            </class>
+            <class name="Parallel.ParallelClassB">
+                <methods>
+                    <include name="parallelB"/>
+                </methods>
+            </class>
+            <class name="Parallel.ParallelClassC">
+                <methods>
+                    <include name="parallelC"/>
+                </methods>
+            </class>
+            <class name="Parallel.ParallelClassD">
+                <methods>
+                    <include name="parallelD"/>
+                </methods>
+            </class>
+            <class name="Parallel.ParallelClassE">
+                <methods>
+                    <include name="parallelE"/>
+                </methods>
+            </class>
+            <class name="Parallel.ParallelClassF">
+                <methods>
+                    <include name="parallelF"/>
+                </methods>
+            </class>
+            <class name="Parallel.ParallelClassG">
+                <methods>
+                    <include name="parallelG"/>
+                </methods>
+            </class>
+            <class name="Parallel.ParallelClassH">
+                <methods>
+                    <include name="parallelH"/>
+                </methods>
+            </class>
+            <class name="Parallel.ParallelClassI">
+                <methods>
+                    <include name="parallelI"/>
+                </methods>
+            </class>
+            <class name="Parallel.ParallelClassJ">
+                <methods>
+                    <include name="parallelJ"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
